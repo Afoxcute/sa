@@ -76,7 +76,7 @@ async function protect(req: Request, res: Response, next: NextFunction) {
     if (refresh && currentUser) {
       await setCookies(req, res, decoded.id);
     }
-    req.user = currentUser as Iuser;
+    req.user = currentUser as unknown as Iuser;
     next();
   };
 
