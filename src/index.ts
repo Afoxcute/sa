@@ -20,6 +20,7 @@ app.use(
       'https://www.swiftaboki.com',
       'http://localhost:3000',
       'http://localhost:3001',
+      'https://sa-srv3.onrender.com',
     ],
     credentials: true,
   }),
